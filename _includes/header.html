@@ -1,0 +1,40 @@
+
+{% include head.html %}
+
+<header class="header">
+
+    <div class="logo">
+      <img src="{{ 'favicon.png' | relative_url }}" alt="B2S Logo" width="40">
+    </div>
+
+    <nav class="navbar navbar-expand-lg navbar-custom">
+      <div class="container-fluid">
+        <div class="collapse navbar-collapse">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="{{ site.baseurl }}/">Home</a>
+              </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{{ site.baseurl }}/services">Serviços</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{{ site.baseurl }}/tecnologies">Tecnologias</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{{ site.baseurl }}/cases">Cases</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{{ site.baseurl }}/contact">Contato</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>      
+    
+    <div class="instagram-icon">
+      <a href="https://www.instagram.com/b2s.software" target="_blank">
+        <i class="fab fa-instagram"></i>
+      </a>
+    </div>
+
+</header>

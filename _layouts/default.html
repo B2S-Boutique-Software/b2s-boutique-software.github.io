@@ -1,44 +1,11 @@
 <!DOCTYPE html>
 <html lang="{{ site.language }}">
-<head>
-  <meta charset="UTF-8">
-  <title>{{ page.title }}</title>
-  <meta name="description" content="{{ page.excerpt | strip_html }}">
-  {% seo %}
-  <meta name="description" content="{{ site.description }}">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
-  <link rel="icon" type="image/png" href="favicon.png">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-484BLCDERH"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-484BLCDERH');
-  </script>
-</head>
+  {% include head.html %}
 <body>
-  <header class="header">
-
-      <div class="logo">
-        <img src="{{ 'favicon.png' | relative_url }}" alt="B2S Logo" width="40">
-      </div>
-      
-      <div class="instagram-icon">
-        <a href="https://www.instagram.com/b2s.software" target="_blank">
-          <i class="fab fa-instagram"></i>
-        </a>
-      </div>
-
-  </header>
+  {% include header.html %}
   <main>
     {{ content }}
   </main>
-  <footer class="footer">
-    <p>{{ site.time | date: "%Y" }} {{ site.title }}</p>
-  </footer>
+  {% include footer.html %}
 </body>
 </html>

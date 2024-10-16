@@ -56,4 +56,17 @@ main {
   text-align: center;
 }
 
+.navbar-custom {
+  background-color: #000000;
+}
+
+.navbar-custom .nav-link {
+  color: #ffffff; 
+}
+
+.navbar-custom .nav-link:hover {
+  color: #cccccc; 
+}
+
+
 

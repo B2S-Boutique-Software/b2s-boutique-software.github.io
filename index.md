@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "B2S - Boutique de Software"
+title: "B2S"
 ---
 
 <div class="row">
