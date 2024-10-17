@@ -23,10 +23,6 @@ main {
   background-color: #000;
   color: white;
   padding: 20px;
-  display: flex;
-  align-items: center;
-  display: flex;
-  justify-content: space-between;
 }
 
 .logo {
@@ -67,6 +63,7 @@ main {
 .navbar-custom .nav-link:hover {
   color: #cccccc; 
 }
+
 
 
 

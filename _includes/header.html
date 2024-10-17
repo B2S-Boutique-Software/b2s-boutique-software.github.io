@@ -1,40 +1,40 @@
 
 {% include head.html %}
 
-<header class="header">
+<header class="header d-flex justify-content-start">
 
-    <div class="logo">
+  <div class="logo">
+    <a href="{{ site.baseurl }}/">
       <img src="{{ 'favicon.png' | relative_url }}" alt="B2S Logo" width="40">
-    </div>
+    </a>
+  </div>
 
-    <nav class="navbar navbar-expand-lg navbar-custom">
-      <div class="container-fluid">
-        <div class="collapse navbar-collapse">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-                <a class="nav-link" href="{{ site.baseurl }}/">Home</a>
-              </li>
-            <li class="nav-item">
-              <a class="nav-link" href="{{ site.baseurl }}/services">Serviços</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="{{ site.baseurl }}/tecnologies">Tecnologias</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="{{ site.baseurl }}/cases">Cases</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="{{ site.baseurl }}/contact">Contato</a>
-            </li>
-          </ul>
-        </div>
+  <nav class="navbar navbar-expand-lg navbar-custom justify-content-center">
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="{{ site.baseurl }}/">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{{ site.baseurl }}/services">Serviços</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{{ site.baseurl }}/tecnologies">Tecnologias</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{{ site.baseurl }}/cases">Cases</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{{ site.baseurl }}/contact">Contato</a>
+          </li>
+        </ul>
       </div>
-    </nav>      
-    
-    <div class="instagram-icon">
-      <a href="https://www.instagram.com/b2s.software" target="_blank">
-        <i class="fab fa-instagram"></i>
-      </a>
     </div>
+  </nav>     
 
 </header>
+
